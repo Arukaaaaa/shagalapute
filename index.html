@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Votre style CSS personnalisé ici */
+
+        /* Styles pour l'en-tête et la navigation (header et nav) */
+        header {
+            background-color: #333; /* Couleur de fond de l'en-tête */
+            color: white; /* Couleur du texte de l'en-tête */
+            padding: 10px; /* Espacement intérieur de l'en-tête */
+            text-align: center; /* Alignement du texte au centre */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère pour l'en-tête */
+            position: relative; /* Position relative pour pouvoir positionner les images */
+        }
+        nav {
+            background-color: #444; /* Couleur de fond de la barre de navigation */
+            display: flex; /* Pour aligner les éléments horizontalement */
+            justify-content: space-around; /* Espace équitablement les éléments dans la nav */
+            list-style-type: none; /* Supprime les puces de la liste */
+            padding: 10px 0; /* Espacement interne de la nav */
+            margin: 0; /* Supprime les marges externes de la nav */
+        }
+
+        nav li {
+            margin: 0 15px; /* Espacement entre les éléments de la nav */
+        }
+
+        /* Pour styliser les liens dans la nav */
+        nav li a {
+            text-decoration: none; /* Supprime le soulignement des liens */
+            color: white; /* Couleur du texte des liens */
+        }
+
+        /* Style pour le contenu principal */
+        main {
+            text-align: center;
+            font-family: 'Courier New', sans-serif;
+            font-size: 18px;
+            padding: 20px;
+            background-image: url('./hollow.gif'); /* Définir l'image animée en arrière-plan */
+            background-size: cover; /* Ajuster la taille pour couvrir la zone */
+            background-attachment: fixed; /* Image fixe lors du défilement */
+            background-position: center; /* Centrer l'image */
+            color: #ffffff; /* Couleur du texte */
+            position: relative; /* Position relative pour permettre le positionnement absolu des images */
+        }
+
+        /* Style pour le titre "Shaga la puta" */
+        h1 {
+            font-family: 'Pacifico', cursive; /* Changer la police de caractères */
+            font-size: 48px; /* Taille du texte */
+            margin-bottom: 20px; /* Marge en bas du titre */
+        }
+
+        /* Style pour les images */
+        .product-images {
+            display: flex; /* Affichage des images en ligne */
+            justify-content: space-around; /* Espace équitablement les images */
+            margin-bottom: 30px; /* Marge en bas des images */
+        }
+
+        .product-image {
+            width: 45%; /* Largeur des images */
+            margin: 0 10px; /* Espacement autour des images */
+        }
+
+        /* Style pour le prix en rouge */
+        .price {
+            color: #FF0000; /* Couleur du texte en rouge */
+            font-size: 20px; /* Taille du texte */
+            font-weight: bold; /* Texte en gras */
+        }
+
+        /* Style pour le texte supplémentaire */
+        .additional-text {
+            color: #FF0000; /* Couleur du texte rouge */
+            font-size: 14px;
+        }
+
+        /* Style pour l'image dans l'en-tête */
+        .header-image {
+            position: absolute;
+            top: 50px; /* Ajuster la valeur pour déplacer l'image vers le bas */
+            left: 10px;
+            width: 300px; /* Ajustez la taille de l'image selon vos besoins */
+        }
+
+        /* Style pour l'image à droite de l'en-tête */
+        .header-right-image {
+            position: absolute;
+            top: 10px; /* Ajuster la valeur pour déplacer l'image vers le bas */
+            right: 10px;
+            width: 180px; /* Ajustez la taille de l'image selon vos besoins */
+        }
+
+        /* Style pour l'article 2 */
+        .article-2 {
+            margin-top: 40px; /* Espacement avec le contenu précédent */
+        }
+
+        .article-2 span {
+            color: #FF0000; /* Couleur du texte en rouge */
+            font-weight: bold; /* Texte en gras */
+        }
+
+        /* Style pour l'image de l'article 2 */
+        .article-2-image {
+            width: 400px; /* Ajustez la taille de l'image selon vos besoins */
+            margin: 20px 0; /* Marge autour de l'image */
+        }
+
+        /* Style pour le texte en bas */
+        .bottom-text {
+            color: #FF0000; /* Couleur du texte en rouge */
+            font-weight: bold; /* Texte en gras */
+        }
+
+        /* Style pour les images en bas */
+        .bottom-images {
+            position: fixed;
+            bottom: 10px;
+            width: 150px; /* Ajustez la taille des images */
+            z-index: 9999; /* Assure la visibilité au-dessus du contenu */
+        }
+        
+
+        /* Style pour l'article 3 */
+        .article-3 {
+            margin-top: 40px; /* Espacement avec le contenu précédent */
+        }
+
+        .article-3 h3 {
+            color: #FF0000; /* Couleur du texte en rouge */
+            font-weight: bold; /* Texte en gras */
+        }
+
+        .article-3-text {
+            text-align: center; /* Aligner le texte au centre */
+            margin-top: 20px; /* Espacement avec le titre */
+        }
+        .article-3-text::after {
+    content: "CAR IL EST CHAUVE";
+    display: block;
+    font-weight: bold;
+    background-color: red; /* Changement de la couleur de surlignage */
+    padding: 5px; /* Ajout de l'espace autour du texte */
+}
+        .article-3-image {
+            display: block; /* Convertir l'image en élément de bloc */
+            margin: 0 auto; /* Centrer l'image horizontalement */
+            width: 400px; /* Ajustez la taille de l'image selon vos besoins */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Contact</a></li>
+    </nav>
+    <img src="./holloww.png" class="header-image" alt="Hollow Image">
+    <img src="./shaga la puta site.PNG" width="30%" alt="Logo">
+    <img src="./hollowww.png" class="header-right-image" alt="Hollow Image">
+</header>
+
+<main>
+    <h1>Shaga la puta</h1>
+    <h2>Pourquoi Shaga est une puta ????</h2>
+    <p>Dans ce screen, de son profil nous voyons <span style="color:#FF0000;">PLUSIEURS</span> éléments qui nous montrent que c'est une <span style="color:#FF0000;">PUTA</span>.</p>
+    
+    <div class="product-images">
+        <!-- Première image de t-shirt (shaga.png) avec son prix -->
+        <img src="./shaga.png" class="product-image" alt="Shaga T-shirt">
+        <p class="price">Prix : 10,99 €</p> <!-- Prix du t-shirt en rouge -->
+
+        <!-- Deuxième image de t-shirt (discord.bmp) avec son prix -->
+        <img src="./discord.bmp" class="product-image" alt="Discord Image">
+        <p class="price">Prix : 4,49 € (Promotion 50%)</p> <!-- Prix de Discord en promotion -->
+    </div>
+
+    <h3><a href="https://fr.wikipedia.org/wiki/Amouranth" target="_blank">Article 1</a></h3>
+    <p>"Si jamais quelqu'un vous dit que vous êtes un sac à merde, Et bah il a p'tet raison", alors qu'ici tout le monde sait qu'il est la seule merde.</p>
+    
+    <!-- Contenu supplémentaire ajouté dans l'article 1 -->
+    <p>On observe qu'il a une photo de profil de fille, ici <a href="https://fr.wikipedia.org/wiki/Nico_Robin" target="_blank">Nico Robin</a>, un personnage sexualisé dans l'animé One Piece, il fait cela pour attirer les hommes et avoir de l'argent gratuitement. Comme les e-boys de l'application Discord et avoir des "nitros" qui de base coûte en moyenne une somme de 4,99 euros jusqu'à 9,99 euros par mois. Il faut <span class="additional-text">BANNIR</span> cet homme.</p>
+    
+    <!-- Article 2 -->
+    <div class="article-2">
+        <h3><a href="#">Article 2</a></h3>
+        <p>Son prénom : <span>Steve</span> rien qu'à ça on sait que c'est une puta, de plus il n'a pas de barbe, il écoute kendji girac, il est <span>GITAN</span>.<span>EST CE QUE C'EST BON POUR VOUS ?</span></p>
+    </div>
+
+    <!-- Image redirigeant vers une vidéo -->
+    <a href="https://www.youtube.com/watch?v=TRI2oe4GCHE&pp=ygUMbGEgYm9pc2Vlcmll" target="_blank">
+        <img src="./Capture.PNG" class="article-2-image" alt="Capture">
+    </a>
+    <!-- Texte en rouge -->
+    <p class="bottom-text">Des CHENILLES de TANK sur mon BUGGY !</p>
+    
+    <!-- Logo de Steam en bas à droite -->
+    <div align="right"> <img src="./steam logo.png" class="bottom-images" alt="Steam Logo"></div>
+
+    <!-- Autre image en bas à gauche -->
+    <div align="left"><img src="./image.png" class="bottom-images" alt="Autre Image"> </div>
+
+    <!-- Article 3 -->
+    <div class="article-3">
+        <h3>TOM PERE(SHAGA)</h3>
+        <div class="article-3-text">
+            <p>Nous verrons pourquoi le daron de shaga est appelé "tom pere".</p>
+            <img src="./crane.jpg" class="article-3-image" alt="Crane Image">
+        </div>
+    </div>
+    
+</main>
+
+<!-- Le reste de votre contenu -->
+
+</body>
+</html>
